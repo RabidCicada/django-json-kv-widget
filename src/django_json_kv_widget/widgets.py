@@ -1,0 +1,27 @@
+import json
+import traceback
+from itertools import islice
+
+from django.forms import Widget,MultiWidget,CharField,MultiValueField,TextInput
+from django.utils.safestring import mark_safe
+from django.forms.utils import flatatt
+from django.template.loader import get_template
+
+class JsonKVWidget(TextInput):
+    template_name = 'json_pairs_widget/json_input_widget.html'
+    class Media:
+        css = {
+            'all': ('js/json_kv_widget/themes/default/style.css',)
+        }
+        js = ('js/json_kv_widget/jstree.js','js/json_kv_widget/json_kv_widget.js')
+
+    def __init__(self, attrs=None, *args, **kwargs):
+        if attrs is not None:
+            attrs = attrs.copy()
+        super().__init__(attrs, *args, **kwargs)
+        #print(f"{self.__class__.__name__} Constructed with media: {self.media}")
+
+    def get_context(self, name, value, attrs):
+        context = super().get_context(name, value, attrs)
+        #print(f"{self.__class__.__name__} Context:\n{context}")
+        return context

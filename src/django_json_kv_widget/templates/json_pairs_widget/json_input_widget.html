@@ -1,0 +1,8 @@
+{% include 'django/forms/widgets/text.html' %}
+<br/>
+<div><!--This div is needed to protext the following buttons from some django template rendering magic that tries to steal them-->
+<button class="jstree_newfolder" type="button" class="btn btn-secondary">New Root Folder</button> <button class="jstree_newkeyval" type="button" class="btn btn-secondary">New Root key</button>
+<div class="json_kv_widget" data-target="{{widget.attrs.id}}">
+</div>
+</div>
+<br/>
