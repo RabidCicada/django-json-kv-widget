@@ -1,7 +1,7 @@
 ===================
 Json KV widget
 ===================
-
+.. image:: images/Example.png
 .. note::
     This is currently a Work-In-Progress.  There are many things that need to be
     reworked...but it is usable.  In particular:
@@ -9,8 +9,8 @@ Json KV widget
     - The inline modifications in jsTree should be redone as proper plugins if possible.
     - Move css style for folder and keys out of types plugin usage in json_kv_widget.js
       - Let it be specified strictly in css file.
-
-
+    - Fixing the text being typed being white on a white background when editing values
+    - Aligning the keys and values in a better manner.
 
 A Django widget for rendering a nice Key-Value editing GUI that supports folders
 and uses json as it's backing data format.
