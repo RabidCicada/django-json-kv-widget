@@ -8,6 +8,7 @@
     - Fixing the text being typed being white on a white background when editing values
     - Aligning the keys and values in a better manner.
     - Currently Allowing Folder to have values set (which may break the entire thing)
+    - Assumes fontawesome is available currently (will change with css style change above)
 
 ===================
 Json KV widget
