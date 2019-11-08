@@ -659,7 +659,7 @@
 			_temp1.appendChild(_temp2);
 			_node.appendChild(_temp1);
 
-			//VailMod add value box
+			//django_json_kv_widget Mod add value box
 			_temp1 = document.createElement('DIV');
 			_temp1.className = 'jstree-additional';
 			_temp1.setAttribute('href','#');
@@ -3782,7 +3782,7 @@
 			return true;
 		},
 		/**
-		 * VailMod set the text of a key value of a node. Used internally, please use `set_node_data_val(obj, key, val)`.
+		 * django_json_kv_widget Mod set the text of a key value of a node. Used internally, please use `set_node_data_val(obj, key, val)`.
 		 * @private
 		 * @name set_text(obj, key, val)
 		 * @param  {mixed} obj the node, you can pass an array to set the text on multiple nodes
@@ -4023,7 +4023,7 @@
 		},
 
 		/**
-		 * VailMod set the text of a key value of a node
+		 * django_json_kv_widget Mod set the text of a key value of a node
 		 * @name set_node_data_val(obj, key, val)
 		 * @param  {mixed} obj the node, you can pass an array to set data vals on multiple nodes to the same name
 		 * @param  {String} key the key on which the data value will be set
@@ -4730,7 +4730,7 @@
 			});
 		},
 
-		/**VailMod (This is the GUI/HTML/js edit function)
+		/**django_json_kv_widget Mod (This is the GUI/HTML/js edit function)
 		 * put a node in edit data val mode (input field to rename the node)
 		 * @name edit(obj [, default_text, callback])
 		 * @param  {mixed} obj
@@ -8355,8 +8355,8 @@
 
 							m[dpc[i]].type = c;
 
-							//VailMod
-							//Copy in "special" data if none already exists
+							//django_json_kv_widget Mod
+							//Copy in "databag" data if none already exists
 							//if(!m[dpc[i]].hasOwnProperty("databag") && m[dpc[i]].type != "folder"){
 						  if(!m[dpc[i]].hasOwnProperty("databag")){
 								m[dpc[i]].databag = t[c].databag
