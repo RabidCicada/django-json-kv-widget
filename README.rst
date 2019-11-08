@@ -1,7 +1,7 @@
 ===================
 Json KV widget
 ===================
-.. image:: images/Example.png
+.. image:: https://raw.githubusercontent.com/RabidCicada/django-json-kv-widget/master/docs/source/images/Example.png
 .. note::
     This is currently a Work-In-Progress.  There are many things that need to be
     reworked...but it is usable.  In particular:
