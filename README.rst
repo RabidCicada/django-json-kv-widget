@@ -1,7 +1,3 @@
-===================
-Json KV widget
-===================
-.. image:: https://raw.githubusercontent.com/RabidCicada/django-json-kv-widget/master/docs/source/images/Example.png
 .. note::
     This is currently a Work-In-Progress.  There are many things that need to be
     reworked...but it is usable.  In particular:
@@ -11,6 +7,12 @@ Json KV widget
       - Let it be specified strictly in css file.
     - Fixing the text being typed being white on a white background when editing values
     - Aligning the keys and values in a better manner.
+    - Currently Allowing Folder to have values set (which may break the entire thing)
+
+===================
+Json KV widget
+===================
+.. image:: https://raw.githubusercontent.com/RabidCicada/django-json-kv-widget/master/docs/source/images/Example.png
 
 A Django widget for rendering a nice Key-Value editing GUI that supports folders
 and uses json as it's backing data format.
